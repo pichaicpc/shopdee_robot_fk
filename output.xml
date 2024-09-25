@@ -1,118 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.12.5 on win32)" generated="2024-09-24T23:24:51.507816" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1 (Python 3.12.5 on win32)" generated="2024-09-25T11:29:44.413488" rpa="false" schemaversion="5">
 <suite id="s1" name="Login" source="C:\Users\hp\Downloads\shopdee_robot_fk\login.robot">
 <test id="s1-t1" name="Valid Login Test" line="14">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-24T23:24:51.871379" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/admin/login'.</msg>
+<msg time="2024-09-25T11:29:44.763825" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/admin/login'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-24T23:24:51.871379" elapsed="2.468192"/>
+<status status="PASS" start="2024-09-25T11:29:44.763825" elapsed="3.312806"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-09-24T23:24:54.341568" elapsed="0.041001"/>
+<status status="PASS" start="2024-09-25T11:29:48.076631" elapsed="0.054792"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-24T23:24:54.384573" level="INFO">Typing text 'admin' into text field 'name=username'.</msg>
+<msg time="2024-09-25T11:29:48.132433" level="INFO">Typing text 'admin' into text field 'name=username'.</msg>
 <arg>name=username</arg>
 <arg>${VALID_USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-24T23:24:54.383572" elapsed="0.211001"/>
+<status status="PASS" start="2024-09-25T11:29:48.132433" elapsed="0.212790"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-24T23:24:54.595569" level="INFO">Typing text '12345678' into text field 'name=password'.</msg>
+<msg time="2024-09-25T11:29:48.345223" level="INFO">Typing text '12345678' into text field 'name=password'.</msg>
 <arg>name=password</arg>
 <arg>${VALID_PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-24T23:24:54.595569" elapsed="0.243625"/>
+<status status="PASS" start="2024-09-25T11:29:48.345223" elapsed="0.213992"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-09-24T23:24:54.855195" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<msg time="2024-09-25T11:29:48.559215" level="INFO">Clicking button 'id=btnLogin'.</msg>
 <arg>id=btnLogin</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-24T23:24:54.855195" elapsed="0.132999"/>
+<status status="PASS" start="2024-09-25T11:29:48.559215" elapsed="0.097396"/>
 </kw>
 <kw name="Handle Alert" owner="SeleniumLibrary">
-<msg time="2024-09-24T23:24:54.989204" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg time="2024-09-25T11:29:48.656611" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
 <arg>ACCEPT</arg>
 <doc>Handles the current alert and returns its message.</doc>
-<status status="PASS" start="2024-09-24T23:24:54.989204" elapsed="0.522113"/>
+<status status="PASS" start="2024-09-25T11:29:48.656611" elapsed="0.521328"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-24T23:24:57.515430" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-09-25T11:29:51.180719" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-24T23:24:55.513256" elapsed="2.002174"/>
+<status status="PASS" start="2024-09-25T11:29:49.179503" elapsed="2.001464"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>รายการข้อมูลลูกค้า</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-09-24T23:24:57.516453" elapsed="0.022943"/>
+<status status="PASS" start="2024-09-25T11:29:51.182467" elapsed="0.020075"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-09-24T23:24:57.540159" elapsed="2.204000"/>
+<status status="PASS" start="2024-09-25T11:29:51.203049" elapsed="2.277047"/>
 </kw>
 <doc>เข้าสู่ระบบด้วยชื่อผู้ใช้และรหัสที่ถูกต้อง</doc>
 <tag>smoke</tag>
-<status status="PASS" start="2024-09-24T23:24:51.866372" elapsed="7.880794"/>
+<status status="PASS" start="2024-09-25T11:29:44.761790" elapsed="8.718306"/>
 </test>
 <test id="s1-t2" name="Invalid Login Test" line="27">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-24T23:24:59.757442" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/admin/login'.</msg>
+<msg time="2024-09-25T11:29:53.480096" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/admin/login'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-24T23:24:59.756443" elapsed="2.319855"/>
+<status status="PASS" start="2024-09-25T11:29:53.480096" elapsed="2.628667"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-24T23:25:02.079300" level="INFO">Typing text 'test' into text field 'id=username'.</msg>
+<msg time="2024-09-25T11:29:56.108763" level="INFO">Typing text 'test' into text field 'id=username'.</msg>
 <arg>id=username</arg>
 <arg>${INVALID_USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-24T23:25:02.077299" elapsed="0.211066"/>
+<status status="PASS" start="2024-09-25T11:29:56.108763" elapsed="0.171471"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-24T23:25:02.288365" level="INFO">Typing text '1234' into text field 'id=password'.</msg>
+<msg time="2024-09-25T11:29:56.280234" level="INFO">Typing text '1234' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${INVALID_PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-24T23:25:02.288365" elapsed="0.219773"/>
+<status status="PASS" start="2024-09-25T11:29:56.280234" elapsed="0.200914"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-09-24T23:25:02.509262" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<msg time="2024-09-25T11:29:56.482149" level="INFO">Clicking button 'id=btnLogin'.</msg>
 <arg>id=btnLogin</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-24T23:25:02.508681" elapsed="0.169682"/>
+<status status="PASS" start="2024-09-25T11:29:56.482149" elapsed="0.123046"/>
 </kw>
 <kw name="Handle Alert" owner="SeleniumLibrary">
-<msg time="2024-09-24T23:25:02.679497" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg time="2024-09-25T11:29:56.605195" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
 <arg>ACCEPT</arg>
 <doc>Handles the current alert and returns its message.</doc>
-<status status="PASS" start="2024-09-24T23:25:02.679497" elapsed="0.022469"/>
+<status status="PASS" start="2024-09-25T11:29:56.605195" elapsed="0.018275"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-24T23:25:04.702407" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-09-25T11:29:58.625036" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-24T23:25:02.701966" elapsed="2.000441"/>
+<status status="PASS" start="2024-09-25T11:29:56.624470" elapsed="2.000566"/>
 </kw>
 <kw name="Page Should Not Contain" owner="SeleniumLibrary">
-<msg time="2024-09-24T23:25:04.771471" level="INFO">Current page does not contain text 'รายการข้อมูลลูกค้า'.</msg>
+<msg time="2024-09-25T11:29:58.721735" level="INFO">Current page does not contain text 'รายการข้อมูลลูกค้า'.</msg>
 <arg>รายการข้อมูลลูกค้า</arg>
 <doc>Verifies the current page does not contain ``text``.</doc>
-<status status="PASS" start="2024-09-24T23:25:04.703410" elapsed="0.068061"/>
+<status status="PASS" start="2024-09-25T11:29:58.625036" elapsed="0.096699"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-09-24T23:25:04.771471" elapsed="2.195918"/>
+<status status="PASS" start="2024-09-25T11:29:58.721735" elapsed="2.162270"/>
 </kw>
 <doc>เข้าสู่ระบบด้วยชื่อผู้ใช้และรหัสที่ไม่ถูกต้อง</doc>
-<status status="PASS" start="2024-09-24T23:24:59.749324" elapsed="7.219064"/>
+<status status="PASS" start="2024-09-25T11:29:53.480096" elapsed="7.403909"/>
 </test>
 <doc>Login Test Suite</doc>
-<status status="PASS" start="2024-09-24T23:24:51.509817" elapsed="15.461634"/>
+<status status="PASS" start="2024-09-25T11:29:44.416813" elapsed="16.467192"/>
 </suite>
 <statistics>
 <total>
